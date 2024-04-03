@@ -26,7 +26,7 @@ class DestinationModelTest(TestCase):
     self.assertEqual(destination.best_time_to_visit, 'Test Time')
     self.assertEqual(destination.category, 'Beach')  # Ensure the category is set correctly
     self.assertEqual(destination.image_url, 'https://example.com/image.jpg')
-    
+
     def test_destination_category_choices(self):
         destination = Destination.objects.create(
             name='Test Destination',
@@ -74,7 +74,7 @@ class DestinationAPITest(APITestCase):
         )
         url = reverse('destination-retrieve-update-destroy', kwargs={'pk': destination.pk})
         response = self.client.get(url)
-        self.assertEqual(response.status_code, 200)  # Check if object retrieved successfully
+        self.assertEqual(response.status_code, 200)  
 
         # Test update
         updated_data = {
