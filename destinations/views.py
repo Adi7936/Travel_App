@@ -8,10 +8,6 @@ from rest_framework.permissions import IsAuthenticated
 
 
 # Create your views here.
-
-
-
-
 class DestinationListCreate(generics.ListCreateAPIView):
         # authentication_classes = [TokenAuthentication]
 
