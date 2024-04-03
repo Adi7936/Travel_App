@@ -27,7 +27,10 @@ This is a Django RESTful API for managing destinations.
 
    ```bash
    git clone https://github.com/Adi7936/django-destination-api.git
-   
+
+|| Activate env file
+source env/bin/activate
+
 2.Install dependencies:
 pip install -r requirements.txt
 
